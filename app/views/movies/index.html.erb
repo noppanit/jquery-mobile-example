@@ -1,6 +1,19 @@
-<h1>Listing movies</h1>
+<div data-role="content">
+	<ul data-role="listview" data-theme="g">
+		<% @movies.each do |movie| %>
+		<li>
+			<a href="/movies/<%=movie.id%>" class="ui-link-inherit">
+				<h3><%= movie.title%></h3>
+				<h2><%= movie.stars%></h2>
+				<h2><%= movie.rate%> <%= movie.total_time%></h2>
+				<h2><%= movie.showtime%></h2>
+			</a>
+		</li>
+		<% end %>
+	</ul>
+</div>
 
-<table>
+<!-- <table>
   <tr>
     <th>Title</th>
     <th>Stars</th>
@@ -26,6 +39,4 @@
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New Movie', new_movie_path %>
+<%= link_to 'New Movie', new_movie_path %> -->
