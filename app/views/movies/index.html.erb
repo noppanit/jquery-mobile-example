@@ -2,6 +2,10 @@
 	<ul data-role="listview" data-theme="g">
 		<% @movies.each do |movie| %>
 		<li>
+			<div class="youtube_video">
+			   	<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/P1eFEMNLtao" frameborder="0">
+				</iframe>
+			</div>
 			<a href="/movies/<%=movie.id%>" class="ui-link-inherit">
 				<h3><%= movie.title%></h3>
 				<h2><%= movie.stars%></h2>
