@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  stars: MyString
+  rate: MyString
+  total_time: MyString
+  showtime: 2011-10-02
+
+two:
+  title: MyString
+  stars: MyString
+  rate: MyString
+  total_time: MyString
+  showtime: 2011-10-02
