@@ -1,7 +1,7 @@
 <div data-role="content" id="cinemalist">
 	<ul data-role="listview" data-theme="g">
 		<% @cinemas.each do |cinema| %>
-		<li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+		<li data-theme="g">
 			<a href="/cinemas/<%=cinema.id%>" class="ui-link-inherit">
 				<img src="<%=cinema.image_src%>">
 				<h3 class="ui-li-heading"><%= cinema.title%></h3>
