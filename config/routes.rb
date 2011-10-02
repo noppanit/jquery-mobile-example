@@ -1,12 +1,14 @@
 Movies::Application.routes.draw do
-  resources :people
-
-  resources :cinemas
-
+  get "trivia/index"
   get "home/index"
-
+  
+  resources :people
+  resources :cinemas
   resources :movies
+  
   root :to => "home#index"
+  
+  match 'trivia' => 'trivia#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
