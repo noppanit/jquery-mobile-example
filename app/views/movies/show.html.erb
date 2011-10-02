@@ -1,32 +1,30 @@
-<p>
-	<img src="<%= @movie.image_src%>" width="128"/>
-</p>
+<div data-role="content">
+	<p>
+		<img src="<%= @movie.image_src%>" width="128"/>
+	</p>
 
-<p>
-  <b>Title:</b>
-  <%= @movie.title %>
-</p>
+	<p>
+  		<b>Title:</b>
+  		<%= @movie.title %>
+	</p>
 
-<p>
-  <b>Stars:</b>
-  <%= @movie.stars %>
-</p>
+	<p>
+  		<b>Stars:</b>
+  		<%= @movie.stars %>
+	</p>
 
-<p>
-  <b>Rate:</b>
-  <%= @movie.rate %>
-</p>
+	<p>
+  		<b>Rate:</b>
+  		<%= @movie.rate %>
+	</p>
 
-<p>
-  <b>Total time:</b>
-  <%= @movie.total_time %>
-</p>
-
-<p>
-  <b>Showtime:</b>
-  <%= @movie.showtime %>
-</p>
-
-
-<%= link_to 'Edit', edit_movie_path(@movie) %>
-
+	<p>
+  		<b>Total time:</b>
+  		<%= @movie.total_time %>
+	</p>
+	
+	<p>
+  		<b>Showtime:</b>
+  		<%= @movie.showtime.strftime("%B %d, %Y") %>
+	</p>
+</div>
