@@ -172,25 +172,6 @@ ul.full-buttonslist li a {
 	border: 1px solid #f0f;
 }
 
-
-	
-li.bm {
-	background: url(../images/b_movies.png) no-repeat top;
-}
-li.bl {
-	background: url(../images/b_leaderboard.png) no-repeat top;
-}
-li.bp {
-	background: url(../images/b_people.png) no-repeat top;
-}
-li.bt {
-	background: url(../images/b_trivia.png) no-repeat top;
-}
-li.bs {
-	background: url(../images/b_settings.png) no-repeat top;
-}
-
-
 @media screen and (max-device-width: 480px) { 
 	.ui-body-c {
 		background: #f00;
