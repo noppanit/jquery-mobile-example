@@ -1,23 +1,18 @@
-<h1>Listing people</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @people.each do |person| %>
-  <tr>
-    <td><%= person.name %></td>
-    <td><%= link_to 'Show', person %></td>
-    <td><%= link_to 'Edit', edit_person_path(person) %></td>
-    <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Person', new_person_path %>
+<div data-role="content" id="peoplelist">
+	<ul data-role="listview" data-theme="g">
+		<li>
+			<a href="#" class="ui-link-inherit">
+				<img src="/assets/thumb_eewei.jpg">
+				<h3 class="ui-li-heading">Eewei Chen</h3>
+				<p class="ui-li-desc">1 hr ago <strong>South Croydon</strong></p>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="ui-link-inherit">
+				<img src="/assets/thumb_jill.jpg">
+				<h3 class="ui-li-heading">Jill Irving</h3>
+				<p class="ui-li-desc">1 hr ago <strong>Docklands</strong></p>
+			</a>
+		</li>
+	</ul>
+</div>
