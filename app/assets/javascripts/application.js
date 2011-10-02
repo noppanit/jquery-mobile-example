@@ -11,4 +11,5 @@ jQuery(document).ready(function() {
 	jQuery("#refresh").click(function() {
 		location.reload(true);
 	});
+	
 });

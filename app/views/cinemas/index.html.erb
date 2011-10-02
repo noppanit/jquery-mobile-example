@@ -1,25 +1,13 @@
-<h1>Listing cinemas</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Location</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @cinemas.each do |cinema| %>
-  <tr>
-    <td><%= cinema.title %></td>
-    <td><%= cinema.location %></td>
-    <td><%= link_to 'Show', cinema %></td>
-    <td><%= link_to 'Edit', edit_cinema_path(cinema) %></td>
-    <td><%= link_to 'Destroy', cinema, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
+<div data-role="content">
+	<ul data-role="listview" data-theme="g">
+		<% @cinemas.each do |cinema| %>
+		<li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+			<a href="/cinemas/<%=cinema.id%>" class="ui-link-inherit">
+				<h3 class="ui-li-heading"><%= cinema.title%></h3>
+				<p class="ui-li-desc"><%= cinema.location%></p>
+			</a>
+		</li>
+		<% end %>
+	</ul>
+</div>
 <%= link_to 'New Cinema', new_cinema_path %>

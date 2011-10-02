@@ -8,8 +8,8 @@
   	<%= javascript_include_tag "application" %>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
-
-  <%= csrf_meta_tags %>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  	<%= csrf_meta_tags %>
 </head>
 <body>
 	<div data-role="page">
@@ -17,7 +17,7 @@
 			<h1>Groovy Moovy</h1>
 			<a href="#" id="refresh" class="ui-btn-right" data-icon="refresh">&nbsp;</a>
 		</div>
-			<%= yield %>
+		<%= yield %>
 		<div data-role="footer" data-position="fixed" class="nav-custom-icon">
 			<div data-role="navbar" class="nav-custom-icon">
 				<ul>
