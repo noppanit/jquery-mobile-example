@@ -6,8 +6,20 @@
  *= require_tree . 
 */
 
-.nav-custom-icon .ui-btn .ui-btn-inner { padding-top: 40px !important; }
-.nav-custom-icon .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: none !important; border-radius: none !important; }
+.nav-custom-icon .ui-btn .ui-btn-inner { 
+	padding-top: 40px !important; 
+}
+
+.nav-custom-icon .ui-btn .ui-icon { 
+	width: 30px!important; 
+	height: 30px!important; 
+	margin-left: -15px !important; 
+	box-shadow: none!important; 
+	-moz-box-shadow: none!important; 
+	-webkit-box-shadow: none!important; 
+	-webkit-border-radius: none !important; 
+	border-radius: none !important; 
+}
 
 #ppl .ui-icon {
 	background:  url(/assets/b_people.png) 50% 50% no-repeat; 

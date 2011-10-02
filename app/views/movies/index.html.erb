@@ -1,46 +1,15 @@
 <div data-role="content">
 	<ul data-role="listview" data-theme="g">
 		<% @movies.each do |movie| %>
-		<li>
-			<div class="youtube_video">
-			   	<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/P1eFEMNLtao" frameborder="0">
-				</iframe>
-			</div>
+		<li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+			<img src="<%=movie.image_src%>" class="ui-li-thumb">
 			<a href="/movies/<%=movie.id%>" class="ui-link-inherit">
-				<h3><%= movie.title%></h3>
-				<h2><%= movie.stars%></h2>
-				<h2><%= movie.rate%> <%= movie.total_time%></h2>
-				<h2><%= movie.showtime%></h2>
+				<h3 class="ui-li-heading"><%= movie.title%></h3>
+				<p class="ui-li-desc"><%= movie.stars%></p>
+				<p class="ui-li-desc"><%= movie.rate%> <%= movie.total_time%></p>
+				<p class="ui-li-desc"><%= movie.showtime%></p>
 			</a>
 		</li>
 		<% end %>
 	</ul>
 </div>
-
-<!-- <table>
-  <tr>
-    <th>Title</th>
-    <th>Stars</th>
-    <th>Rate</th>
-    <th>Total time</th>
-    <th>Showtime</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @movies.each do |movie| %>
-  <tr>
-    <td><%= movie.title %></td>
-    <td><%= movie.stars %></td>
-    <td><%= movie.rate %></td>
-    <td><%= movie.total_time %></td>
-    <td><%= movie.showtime %></td>
-    <td><%= link_to 'Show', movie %></td>
-    <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-    <td><%= link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<%= link_to 'New Movie', new_movie_path %> -->
