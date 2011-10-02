@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+	<img src="<%= @movie.image_src%>" width="128"/>
+</p>
+
+<p>
   <b>Title:</b>
   <%= @movie.title %>
 </p>
@@ -26,5 +30,4 @@
 </p>
 
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+<%= link_to 'Edit', edit_movie_path(@movie) %>

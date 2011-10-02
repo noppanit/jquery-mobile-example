@@ -21,6 +21,10 @@
 	border-radius: none !important; 
 }
 
+.content-container {
+	margin: 15px;
+}
+
 #ppl .ui-icon {
 	background:  url(/assets/b_people.png) 50% 50% no-repeat; 
 	background-size: 24px 22px; 

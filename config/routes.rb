@@ -1,4 +1,6 @@
 Movies::Application.routes.draw do
+  resources :cinemas
+
   get "home/index"
 
   resources :movies

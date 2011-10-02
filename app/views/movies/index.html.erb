@@ -2,14 +2,13 @@
 	<ul data-role="listview" data-theme="g">
 		<% @movies.each do |movie| %>
 		<li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
-			<a href="http://www.youtube.com/embed/P1eFEMNLtao" class="ui-link-inherit">
+			<a href="/movies/<%=movie.id%>" class="ui-link-inherit">
 				<img src="<%=movie.image_src%>" class="ui-li-thumb">
 				<h3 class="ui-li-heading"><%= movie.title%></h3>
 				<p class="ui-li-desc"><%= movie.stars%></p>
 				<p class="ui-li-desc"><%= movie.rate%> <%= movie.total_time%></p>
 				<p class="ui-li-desc"><%= movie.showtime%></p>
 			</a>
-			<a href="/movies/<%=movie.id%>"></a>
 		</li>
 		<% end %>
 	</ul>
