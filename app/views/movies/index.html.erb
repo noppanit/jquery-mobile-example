@@ -7,7 +7,7 @@
 				<h3 class="ui-li-heading"><%= movie.title%></h3>
 				<p class="ui-li-desc"><%= movie.stars%></p>
 				<p class="ui-li-desc"><%= movie.rate%> <%= movie.total_time%></p>
-				<p class="ui-li-desc"><%= movie.showtime%></p>
+				<p class="ui-li-desc"><%= movie.showtime.strftime("%B %d, %Y")%></p>
 			</a>
 		</li>
 		<% end %>
