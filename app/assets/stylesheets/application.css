@@ -30,3 +30,7 @@
 	background:  url(/assets/b_movies.png) 50% 50% no-repeat; 
 	background-size: 24px 22px;
 }
+
+.ui-li-thumb{
+    min-height: 112px;
+}
