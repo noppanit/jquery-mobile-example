@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111002000220) do
+ActiveRecord::Schema.define(:version => 20111002003509) do
 
   create_table "movies", :force => true do |t|
     t.string   "title"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20111002000220) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_src"
+    t.string   "youtube_id"
   end
 
 end
