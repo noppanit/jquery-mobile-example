@@ -17,19 +17,14 @@
 		</div>
 	</div>
 	<ul data-role="listview" data-theme="g">
-		<li>
-			<a href="#" class="ui-link-inherit">
-				<img src="/assets/thumb_eewei.jpg">
-				<h3 class="ui-li-heading">Eewei Chen</h3>
-				<p class="ui-li-desc">1 hr ago <strong>South Croydon</strong></p>
+		<% @people.each do |person| %>
+		<li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-down-c ui-btn-up-c">
+			<a href="/people/<%=person.id%>" class="ui-link-inherit">
+				<img src="/assets/<%=person.image_src%>">
+				<h3 class="ui-li-heading"><%=person.name%></h3>
+				<p class="ui-li-desc">1 hr ago <strong><%=person.location%></strong></p>
 			</a>
 		</li>
-		<li>
-			<a href="#" class="ui-link-inherit">
-				<img src="/assets/thumb_jill.jpg">
-				<h3 class="ui-li-heading">Jill Irving</h3>
-				<p class="ui-li-desc">1 hr ago <strong>Docklands</strong></p>
-			</a>
-		</li>
+		<% end %>
 	</ul>
 </div>

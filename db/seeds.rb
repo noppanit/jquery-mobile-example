@@ -24,5 +24,14 @@ Movie.create(:title => "Kung Fu Panda 2",
   
 Cinema.create(:title => "Brunswick Centre",
   :location => "Brunswick, London WC1N 1AW",
-  :image_src => "http://www.edmundcude.com/poi-images/Brunswick%20Centre_243_95_32_c.jpg"
-  )
+  :image_src => "http://www.edmundcude.com/poi-images/Brunswick%20Centre_243_95_32_c.jpg")
+  
+Person.create(:name => "Eewei Chen",
+  :location => "South Croydon",
+  :image_src => "thumb_eewei.jpg")
+  
+Person.create(:name => "Jill Irving",
+  :location => "Docklands",
+  :image_src => "thumb_jill.jpg")
+  
+  

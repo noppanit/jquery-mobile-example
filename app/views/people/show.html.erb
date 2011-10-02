@@ -1,10 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @person.name %>
-</p>
-
-
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', people_path %>
+<div data-role="content">
+	<p>
+  		<img src="/assets/<%= @person.image_src %>" />
+	</p>
+	<p>
+  		<b>Name:</b>
+  		<%= @person.name %>
+	</p>
+	<p>
+  		<b>Location:</b>
+  		<%= @person.location %>
+	</p>
+</div>

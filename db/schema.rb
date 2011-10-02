@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111002161011) do
+ActiveRecord::Schema.define(:version => 20111002170734) do
 
   create_table "cinemas", :force => true do |t|
     t.string   "title"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(:version => 20111002161011) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "location"
+    t.string   "image_src"
   end
 
 end
